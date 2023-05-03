@@ -6,9 +6,9 @@ dotenv.config();
 //   useUnifiedTopology: true,
 // });
 
-mongoose.connect('mongodb://localhost:27017/ylf', { useNewUrlParser: true }).then(() => {
-  console.log('Connected to the Database successfully')
-});
+// mongoose.connect('mongodb://localhost:27017/ylf', { useNewUrlParser: true }).then(() => {
+//   console.log('Connected to the Database successfully')
+// });
 
 const registered_userSchema = new mongoose.Schema({
     name:String,

@@ -96,9 +96,9 @@ async function sendMail(user,callback){
     }
     
 
-// mongoose.connect('mongodb://localhost:27017/smart_city', { useNewUrlParser: true }).then(() => {
-//       console.log('Connected to the Database successfully')
-//     });
+mongoose.connect(process.env.DATABASE_PATH, { useNewUrlParser: true }).then(() => {
+      console.log('Connected to the Database successfully')
+    });
 
 const PORT = process.env.PORT || 8000;
 app.listen(PORT,()=>{
